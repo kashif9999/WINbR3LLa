@@ -29,7 +29,8 @@ namespace Winbrella
         public static int BoardID;
         public static int ChipID;
         public static int cydiachipid;
-
+        
+        // Method from iH8sn0w GitHUB(iFaith)
         public static void SaveToDisk(string resourceName, string fileName)
         {
             Assembly assembly = Assembly.GetExecutingAssembly();
