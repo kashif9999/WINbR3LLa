@@ -24,8 +24,8 @@ namespace Winbrella
 
         private void linklbltwitter_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            ProcessStartInfo kashif = new ProcessStartInfo("http://twitter.com/@ih8x0r");
-            Process.Start(kashif);
+            ProcessStartInfo k = new ProcessStartInfo("http://twitter.com/@ih8x0r");
+            Process.Start(k);
         }
 
         private void lblcredits1_Click(object sender, EventArgs e)
