@@ -1,0 +1,246 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E27C58D0-031E-45E9-84E9-FC58C23F24F2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Winbrella</RootNamespace>
+    <AssemblyName>Winbrella</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>winbrellaicon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.IO.Log" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CFManzana\AMDevice.cs" />
+    <Compile Include="CFManzana\AMDeviceNotification.cs" />
+    <Compile Include="CFManzana\CFArray.cs" />
+    <Compile Include="CFManzana\CFBoolean.cs" />
+    <Compile Include="CFManzana\CFData.cs" />
+    <Compile Include="CFManzana\CFDictionary.cs" />
+    <Compile Include="CFManzana\CFIndex.cs" />
+    <Compile Include="CFManzana\CFLibrary.cs" />
+    <Compile Include="CFManzana\CFNumber.cs" />
+    <Compile Include="CFManzana\CFPropertyList.cs" />
+    <Compile Include="CFManzana\CFRange.cs" />
+    <Compile Include="CFManzana\CFString.cs" />
+    <Compile Include="CFManzana\CFType.cs" />
+    <Compile Include="CFManzana\ConnectEventArgs.cs" />
+    <Compile Include="CFManzana\ConnectEventHandler.cs" />
+    <Compile Include="CFManzana\DeviceNotificationEventArgs.cs" />
+    <Compile Include="CFManzana\iDevice.cs" />
+    <Compile Include="CFManzana\iDeviceFile.cs" />
+    <Compile Include="CFManzana\iDevice_ForceAFC.cs" />
+    <Compile Include="CFManzana\MobileDevice.cs" />
+    <Compile Include="CFManzana\MultiPhones.cs" />
+    <Compile Include="credits.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="credits.Designer.cs">
+      <DependentUpon>credits.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="global.cs" />
+    <Compile Include="manual.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="manual.Designer.cs">
+      <DependentUpon>manual.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Plist.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="src\BZip2\BZip2.cs" />
+    <Compile Include="src\BZip2\BZip2Constants.cs" />
+    <Compile Include="src\BZip2\BZip2Exception.cs" />
+    <Compile Include="src\BZip2\BZip2InputStream.cs" />
+    <Compile Include="src\BZip2\BZip2OutputStream.cs" />
+    <Compile Include="src\Checksums\Adler32.cs" />
+    <Compile Include="src\Checksums\CRC32.cs" />
+    <Compile Include="src\Checksums\IChecksum.cs" />
+    <Compile Include="src\Checksums\StrangeCRC.cs" />
+    <Compile Include="src\Core\FileSystemScanner.cs" />
+    <Compile Include="src\Core\INameTransform.cs" />
+    <Compile Include="src\Core\IScanFilter.cs" />
+    <Compile Include="src\Core\NameFilter.cs" />
+    <Compile Include="src\Core\PathFilter.cs" />
+    <Compile Include="src\Core\StreamUtils.cs" />
+    <Compile Include="src\Core\WindowsPathUtils.cs" />
+    <Compile Include="src\Encryption\PkzipClassic.cs" />
+    <Compile Include="src\Encryption\ZipAESStream.cs" />
+    <Compile Include="src\Encryption\ZipAESTransform.cs" />
+    <Compile Include="src\GZip\GZIPConstants.cs" />
+    <Compile Include="src\GZip\GZipException.cs" />
+    <Compile Include="src\GZip\GzipInputStream.cs" />
+    <Compile Include="src\GZip\GzipOutputStream.cs" />
+    <Compile Include="src\Lzw\LzwConstants.cs" />
+    <Compile Include="src\Lzw\LzwException.cs" />
+    <Compile Include="src\Lzw\LzwInputStream.cs" />
+    <Compile Include="src\Main.cs" />
+    <Compile Include="src\SharpZipBaseException.cs" />
+    <Compile Include="src\Tar\InvalidHeaderException.cs" />
+    <Compile Include="src\Tar\TarArchive.cs" />
+    <Compile Include="src\Tar\TarBuffer.cs" />
+    <Compile Include="src\Tar\TarEntry.cs" />
+    <Compile Include="src\Tar\TarException.cs" />
+    <Compile Include="src\Tar\TarHeader.cs" />
+    <Compile Include="src\Tar\TarInputStream.cs" />
+    <Compile Include="src\Tar\TarOutputStream.cs" />
+    <Compile Include="src\Zip\Compression\Deflater.cs" />
+    <Compile Include="src\Zip\Compression\DeflaterConstants.cs" />
+    <Compile Include="src\Zip\Compression\DeflaterEngine.cs" />
+    <Compile Include="src\Zip\Compression\DeflaterHuffman.cs" />
+    <Compile Include="src\Zip\Compression\DeflaterPending.cs" />
+    <Compile Include="src\Zip\Compression\Inflater.cs" />
+    <Compile Include="src\Zip\Compression\InflaterDynHeader.cs" />
+    <Compile Include="src\Zip\Compression\InflaterHuffmanTree.cs" />
+    <Compile Include="src\Zip\Compression\PendingBuffer.cs" />
+    <Compile Include="src\Zip\Compression\Streams\DeflaterOutputStream.cs" />
+    <Compile Include="src\Zip\Compression\Streams\InflaterInputStream.cs" />
+    <Compile Include="src\Zip\Compression\Streams\OutputWindow.cs" />
+    <Compile Include="src\Zip\Compression\Streams\StreamManipulator.cs" />
+    <Compile Include="src\Zip\FastZip.cs" />
+    <Compile Include="src\Zip\IEntryFactory.cs" />
+    <Compile Include="src\Zip\WindowsNameTransform.cs" />
+    <Compile Include="src\Zip\ZipConstants.cs" />
+    <Compile Include="src\Zip\ZipEntry.cs" />
+    <Compile Include="src\Zip\ZipEntryFactory.cs" />
+    <Compile Include="src\Zip\ZipException.cs" />
+    <Compile Include="src\Zip\ZipExtraData.cs" />
+    <Compile Include="src\Zip\ZipFile.cs" />
+    <Compile Include="src\Zip\ZipHelperStream.cs" />
+    <Compile Include="src\Zip\ZipInputStream.cs" />
+    <Compile Include="src\Zip\ZipNameTransform.cs" />
+    <Compile Include="src\Zip\ZipOutputStream.cs" />
+    <EmbeddedResource Include="credits.resx">
+      <DependentUpon>credits.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="manual.resx">
+      <DependentUpon>manual.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="src\ICSharpCode.SharpZLib.prjx" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\winbrellacredit.png" />
+    <EmbeddedResource Include="Resources\s-irecovery.exe" />
+    <None Include="Resources\logoteamsync.png" />
+    <None Include="Resources\teamsync-without-background.png" />
+    <Content Include="src\ICSharpCode.SharpZLib.csproj" />
+    <Content Include="winbrellaicon.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

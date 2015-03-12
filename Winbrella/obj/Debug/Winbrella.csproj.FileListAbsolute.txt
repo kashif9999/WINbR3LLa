@@ -1,0 +1,8 @@
+D:\D Drive\Learning Stuff\VisualPrograms\Winbrella\Winbrella\bin\Debug\Winbrella.exe.config
+D:\D Drive\Learning Stuff\VisualPrograms\Winbrella\Winbrella\bin\Debug\Winbrella.exe
+D:\D Drive\Learning Stuff\VisualPrograms\Winbrella\Winbrella\bin\Debug\Winbrella.pdb
+D:\D Drive\Learning Stuff\VisualPrograms\Winbrella\Winbrella\obj\Debug\Winbrella.winbrella.resources
+D:\D Drive\Learning Stuff\VisualPrograms\Winbrella\Winbrella\obj\Debug\Winbrella.Properties.Resources.resources
+D:\D Drive\Learning Stuff\VisualPrograms\Winbrella\Winbrella\obj\Debug\Winbrella.csproj.GenerateResource.Cache
+D:\D Drive\Learning Stuff\VisualPrograms\Winbrella\Winbrella\obj\Debug\Winbrella.exe
+D:\D Drive\Learning Stuff\VisualPrograms\Winbrella\Winbrella\obj\Debug\Winbrella.pdb
