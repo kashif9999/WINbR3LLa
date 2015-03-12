@@ -1941,7 +1941,7 @@ namespace Winbrella
             finally
             { }
         }
-
+        // Fixme this is not working
         private void submittocydia()
         {
             this.toolStripStatusblob.Text = "Submitting blob to Cydia Server...";
@@ -2179,20 +2179,6 @@ namespace Winbrella
                 //File.Delete(".\\s-irecovery.exe");
             }
         }
-
-        private void PBlogo_Click(object sender, EventArgs e)
-        {
-            ProcessStartInfo teamsync = new ProcessStartInfo("http://teamsync.mcserver.ws/");
-            Process.Start(teamsync);
-        }
-
-        /*
-        private void btndonate_Click(object sender, EventArgs e)
-        {
-            ProcessStartInfo donate = new ProcessStartInfo("https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=F7CKFKT5E6NK8&lc=US&item_name=iDMT&item_number=iDeviceTool&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted");
-            Process.Start(donate);
-        }*/
-        
 
     }
 }
